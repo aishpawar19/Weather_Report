@@ -90,7 +90,7 @@ os.environ['AWS_SECRET_ACCESS_KEY'] = 'Your AWS_SECRET_ACCESS_KEY'
 csv_buffer = StringIO()
 final.to_csv(csv_buffer, index= False)
 s3 = boto3.client('s3', region_name= 'us-east-1')
-bucket_name = 'bucket-for-etl'
+bucket_name = 'Your bucket name'
 file_name = 'weather_report.csv'
 s3.put_object(Bucket=bucket_name, Key=file_name, Body=csv_buffer.getvalue())
 
