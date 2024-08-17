@@ -1,5 +1,7 @@
 # Weather Report Script
 
+## Cities dataset is from: https://simplemaps.com/data/world-cities
+
 ## Overview
 
 This Python script, `weather_report.py`, is part of an ETL (Extract, Transform, Load) project designed to extract weather data from an API and combine it with a world cities dataset. The goal is to get the latest weather information for a selection of cities. Due to the limitations of the free trial version of the OpenWeather API, the dataset has been reduced to approximately 600 rows. The final data is stored in a CSV format in an AWS S3 bucket.
